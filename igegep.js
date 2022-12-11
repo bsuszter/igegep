@@ -8,10 +8,21 @@ szavak = [
 ]
 
 megoldas = [
+    [],
     ["futja" , "futná" , "futotta volna" , "futottátok volna"],
+    ["keres", "keresne", "keresett volna" , "kerestem volna"],
+    ["vágja", "vágja", "vágta" , "vágtad"],
 ]
 
 szavak_szama = szavak.length;
+
+document.getElementById("ige01valasz").disabled = true;
+document.getElementById("ige02valasz").disabled = true;
+document.getElementById("ige03valasz").disabled = true;
+document.getElementById("ige04valasz").disabled = true;
+document.getElementById("ellenoriz").disabled = true;
+
+
 
 $("#indit").click(indit);
 
@@ -20,6 +31,19 @@ function indit(){
     if (szavak_szama == szamlalo) {
         szamlalo = 0;
     }
+
+    document.getElementById("ige01valasz").disabled = false;
+    document.getElementById("ige02valasz").disabled = false;
+    document.getElementById("ige03valasz").disabled = false;
+    document.getElementById("ige04valasz").disabled = false;
+    document.getElementById("ellenoriz").disabled = false;
+    document.getElementById("indit").disabled = true;
+
+    document.getElementById("ige01valasz").style.backgroundColor = "white";
+    document.getElementById("ige02valasz").style.backgroundColor = "white";
+    document.getElementById("ige03valasz").style.backgroundColor = "white";
+    document.getElementById("ige04valasz").style.backgroundColor = "white";
+
     document.getElementById("ige").innerHTML = szavak[szamlalo][0];
     //ragozás
     if (szavak[szamlalo][1] == "1") {
@@ -117,10 +141,48 @@ $("#ellenoriz").click(ellenoriz);
 
 
 function ellenoriz(){
+    console.log("számláló" + szamlalo)
+    document.getElementById("indit").disabled = false;
+
     var valasz1 = document.getElementById("ige01valasz").value;
     var valasz2 = document.getElementById("ige02valasz").value;
     var valasz3 = document.getElementById("ige03valasz").value;
     var valasz4 = document.getElementById("ige04valasz").value;
-    console.log(valasz)
-   // megoldas[szamlalo][0] == 
+
+
+   if (megoldas[szamlalo][0] == valasz1) {
+    console.log("jó")
+    document.getElementById("ige01valasz").style.backgroundColor = "#89ef75";
+   }
+   else {
+    console.log("rossz")
+    document.getElementById("ige01valasz").style.backgroundColor = "red";
+   }
+
+   if (megoldas[szamlalo][1] == valasz2) {
+    console.log("jó")
+    document.getElementById("ige02valasz").style.backgroundColor = "#89ef75";
+   }
+   else {
+    console.log("rossz")
+    document.getElementById("ige02valasz").style.backgroundColor = "red";
+   }
+
+   if (megoldas[szamlalo][2] == valasz3) {
+    console.log("jó")
+    document.getElementById("ige03valasz").style.backgroundColor = "#89ef75";
+   }
+   else {
+    console.log("rossz")
+    document.getElementById("ige03valasz").style.backgroundColor = "red";
+   }
+
+   if (megoldas[szamlalo][3] == valasz4) {
+    console.log("jó")
+    document.getElementById("ige04valasz").style.backgroundColor = "#89ef75";
+   }
+   else {
+    console.log("rossz")
+    document.getElementById("ige04valasz").style.backgroundColor = "red";
+   }
 }
