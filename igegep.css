@@ -21,194 +21,63 @@
 }
 
 .keret{
-    background-image: url(https://interaktivfeladat.hu/jatek/pic/alapkep01.gif);
+    /* background-image: url(https://interaktivfeladat.hu/jatek/pic/alapkep01.gif); */
     width: 85%;
-    height: 500px;
+    /* height: 500px; */
     padding: 10px;
-    border: 10px solid #0090A4;
+    /* border: 10px solid #0090A4; */
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .igegep_keret{
+    text-align: center;
+  }
    
-  
-  .example-parent {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #39A2B8;
-    border: 5px solid #0090A4;
-    color: black;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    width: 98%;
-    min-height: 60px;
-  }
-
-  .example-draggable {
-    cursor: pointer;
-    font-weight: normal;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  #igepic01, #igepic02, #igepic03, #igepic04, #igepic05,
+  #igepic06, #igepic07, #igepic08, #igepic09, #igepic10,
+  #igepic11, #igepic12, #igepic13
+  {
+    display: block;
     width: 80px;
-    height: 55px;
-    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity:0.1;
   }
 
-  .dropzone{
+  #ige{
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .nyilak{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 10px;
-  }
-
-  .megold {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
-  .szöveg{
-    font-size: 38px;
-    text-align: center;
-    background-color: #CDD629;
-    border: 2px solid #6d7214;
-    height: 70px;
-    width: 100px;
-  }
-  
-  .szöveg p{
-    margin: 0;
-    text-align: center;
-    padding: 13px 0 0 0; 
-  }
-  
-  h1{
-    text-align: center;
-  }
-
-  .example-dropzone {
-    background-color: #BFC006;
-    border: 2px solid #6d7214;
-    height: 70px;
-    width: 100px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-#draggable1, #draggable2, #draggable3, #draggable4, #draggable5, #draggable6, #draggable7 , #draggable8, 
-#draggable9{
-  background-repeat: no-repeat;
-  background-size: 80px 55px;
-  border: 1px solid #000;
-}
-
-#valasz1 {
-    background-repeat: no-repeat;
-    background-size: 100px 50px;
-    border: 1px solid #000;
-    padding-top:46px;
-    text-align: center;
-  }
-
-  #ellenoriz {
-    background-color: #BFC006;
-    cursor: pointer;
-    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
     width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
   }
 
-  #inditas {
-    background-color: #0090A4;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-  }
-  
-  #ujra {
-    background-color:  #f55858;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 150px;
-    height: 30px;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #help {
-    /* background-color:  #f55858; */
-    cursor: pointer;
-
-    width: 100px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    text-align: center;
+  p { 
+    line-height: 30%; 
   }
 
   .gombok{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  
-  }
+    flex-wrap: wrap;
+    align-content: center;
+   /*  margin-bottom: 30px; */
+}
 
-  .kozmondas{
-    text-align: center;
-  }
-
-  .kozmondas_keret{
+/*   #ige01, #ige02{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
-  }
-
-  .progress-bar{
-    margin-bottom: 2px;
-    width: 100%;
-}
-
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: #47A8F5;
-  color: white;
-  margin-bottom: 15px;
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-}
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    width: 250px;
+    align-items: center;
+  } */
